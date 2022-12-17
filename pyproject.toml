@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "mkdocs-git-info-plugin"
+version = "0.1.0"
+description = ""
+authors = ["Tim Vink <vinktim@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+GitPython = "^3.1.29"
+mkdocs = "^1.4"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^5.2"
+ipdb = "^0.13.9"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."mkdocs.plugins"]
+git-info = "mkdocs_git_info_plugin.plugin:GitInfoPlugin"
+
+[tool.mypy]
+ignore_missing_imports = true
+warn_unreachable = true
+no_implicit_optional = true
+show_error_codes = true
