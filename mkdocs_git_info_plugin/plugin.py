@@ -23,7 +23,7 @@ class GitInfoPlugin(BasePlugin):
         """
         Use new mkdocs 1.4 plugin system.
 
-        he presence of an on_startup method (even if empty) migrates the plugin 
+        The presence of an on_startup method (even if empty) migrates the plugin 
         to the new system where the plugin object is kept across builds within 
         one mkdocs serve.
         """
