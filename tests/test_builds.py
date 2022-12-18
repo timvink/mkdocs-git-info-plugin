@@ -25,9 +25,6 @@ import git
 import pytest
 from click.testing import CliRunner
 
-# package module
-from mkdocs_git_revision_date_localized_plugin.util import Util
-from mkdocs_git_revision_date_localized_plugin.ci import commit_count
 
 # ##################################
 # ######## Globals #################
